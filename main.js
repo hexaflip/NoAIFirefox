@@ -29,6 +29,18 @@ const hideButtons = () => {
   document.querySelector('div[id="Odp5De"]')?.remove();
 };
 
+const svg = document.querySelector('svg.lnXdpd');
+
+if (svg) {
+  const img = document.createElement("img");
+  img.src = browser.runtime.getURL("icons/team_cool_kidd.png");
+  img.alt = "zuhn's favorite word";
+  img.style.height = svg.getBoundingClientRect().height + "px";
+  img.style.width = "auto";
+
+  svg.replaceWith(img);
+}
+
 hideButtons();
 const observer = new MutationObserver(hideButtons);
 observer.observe(document.body, { childList: true, subtree: true });
