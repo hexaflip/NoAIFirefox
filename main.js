@@ -27,6 +27,7 @@ const hideButtons = () => {
   document.querySelector('div[class="YNk70c EjQTId"]')?.remove();
   document.querySelector('div[data-hveid="CAgQBg"]')?.remove();
   document.querySelector('div[id="Odp5De"]')?.remove();
+  document.querySelector('div[class="ULSxyf"]')?.remove();
 };
 
 const svg = document.querySelector('svg.lnXdpd');
